@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure's Sign up page</title>
+    <link rel="stylesheet" href="Azure.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="Azure.jpg" alt="Azure Logo">
+        <h1>Create an account</h1>
+        <form id="Signup-form">
+            <label for="signup-username">Create your username</label>
+            <input type="text" id="signup-username" placeholder="Username" required><br>
+            <label for="signup-email">Enter your email address</label>
+            <input type="email" id="signup-email" placeholder="Email" required><br>
+            <label for="signup-password">Create a password</label>
+            <input type="password" id="password" placeholder="Password" required><br>
+            <div>
+                <label for="mycheck">
+                    <h2>Do you agree with our Terms and Conditions?</h2>
+                    <div>
+                        <input type="checkbox" id="mycheck" required>
+
+                    </div>
+                </label>
+
+                <button type="submit">Create account</button>
+        </form>
+        <form id="Login-form" class="hidden">
+            <p>Welcome back 👋🏿</p>
+            <input type="text" id="login-username" placeholder="Username" required>
+            <label for="login-username"><br>Enter username</label><br>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <label for="login-password"><br>Enter your password</label><br>
+            <button type="submit">Login</button>
+        </form>
+        <div class="toggle" oneclick="toggleForm()">Already have an account? Login</div>
+
+    </div>
+</body>
+
+</html>
